@@ -1,0 +1,28 @@
+<?php
+	date_default_timezone_set('America/Sao_paulo');
+	$pdo = new PDO('mysql:host=localhost;dbname=modulo_8','root','');
+
+	if(isset($_POST['acao'])){
+		$nome = $_POST['nome'];
+		$sobrenome = $_POST['sobrenome'];
+		$momento_registro = date('Y-m-d H:i:s');
+
+		$sql = $pdo->prepare("INSERT INTO `clientes` VALUES (null,?,?,?)");
+
+		$sql->execute(array($nome,$sobrenome,$momento_registro));
+		echo 'Cliente inserido com sucesso!';
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro no Banco</title>
+</head>
+<body>
+<form method="post">
+		<input type="text" name="nome" requiered />
+		<input type="text" name="sobrenome" requiered />
+		<input type="submit" name="acao" value="Enviar!" />
+</body>
+</html>

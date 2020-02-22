@@ -1,0 +1,13 @@
+ORIENTACAO A OBJETOS NO PHP OU OOP
+
+	Pessoa = objeto
+	atributos: = variaveis
+	{
+		nome
+		idade
+		peso
+
+		variacoes = metodos
+		cresce()
+		comer()
+	}
