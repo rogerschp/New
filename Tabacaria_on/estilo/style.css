@@ -55,25 +55,7 @@ img{
 	clear: both;
 }
 
-/**estilizacao do site**/
-
-.overlay-loading{
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	z-index: 999;
-	background: rgba(0,0,0,0.4);
-}		
-
-.overlay-loading img{
-	width: 48px;
-	height: 48px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-}
+/**estilizacao do site**/		
 
 header{
 	padding:20px 0px;		/*primeiro valor cima baixo, segundo valor direita direita*/

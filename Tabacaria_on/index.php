@@ -28,10 +28,6 @@
 	}
 ?>
 
-	<dvi class="overlay-loading">
-		<img src="<?php echo INCLUDE_PATH ?>pictures/ajax-loader.gif" />
-	</dvi><!--overlay-loading-->
-
 	<header>
 		<div class="center">
 			<div class="logo left"><a href="/">Logomarca</a></div><!--logo-->

@@ -1,5 +1,7 @@
 <?php
 
+	session_start();
+		
 	$autoload = function($class){
 		if($class == 'Email'){
 			require_once('classes/phpmailer/PHPMailerAutoload.php');
@@ -12,4 +14,5 @@
 
 
 	define('INCLUDE_PATH','http://localhost/Tabacaria_on/');
+	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'Painel/');	
 ?>

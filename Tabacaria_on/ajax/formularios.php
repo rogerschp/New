@@ -1,5 +1,7 @@
 <?php
 	include('../config.php');
+
+	$_POST['par1'];
 	$data = array();
 	$assunto = 'Nova mensagem do site!';
 	$corpo = '';
