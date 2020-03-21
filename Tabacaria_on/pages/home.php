@@ -33,7 +33,7 @@
 				<h2>Insira seu E-mail para cadastro!</h2>
 				<input type="email" name="email" required />
 				<input type="hidden" name="identificador" value="form_home" />
-				<input type="submit" name="acao" value="Cadastrar!" >	
+				<input type="submit" name="acao" value="Cadastrar!">	
 			</form><!--Formulario de cadastro!-->
 		<div class="textCenter">
 			<h1>Smoking On</h1>

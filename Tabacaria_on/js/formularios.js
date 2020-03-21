@@ -1,13 +1,11 @@
 $(function(){
+	 
 	
 
 	$('body').on('submit','form',function(){
 		var form = $(this);
 		$.ajax({
-			beforeSend:function(){
-				console.log('enviando');
-			}
-			url:include_path+'ajax/formularios.php',
+			url:'../ajax/formularios.php',
 			method:'post',
 			dataType: 'json',
 			data:form.serialize()
@@ -22,3 +20,20 @@ $(function(){
 	})
 	
 })
+
+// $(document).ready(function(){
+
+// 	$('#botao').on('click', function(){
+
+// 		alert("oi");
+// 		$.ajax({
+// 			url:'ajax/formularios.php',
+// 			method: 'POST',
+// 			data: {par1: include}
+// 			sucess: function(){
+// 				alert("ok")
+// 			}
+// 		})
+// 	})
+
+// })
